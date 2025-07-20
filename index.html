@@ -24,7 +24,40 @@
       </aside>
   
       <main>
-        <div class="main-container">main</div>
+        <div id="main-container">
+          <h2>Crie seu convite</h2>
+          <form>
+            <fieldset class="event">
+              <img src="assets/icons/calendar.svg" alt="">
+              <legend>Sobre o evento</legend>
+              <div class="title">
+                <label for="eventname">Título</label>
+                <input id="eventname" name="eventname" type="text" placeholder="Nome do evento">
+              </div>
+              <div class="date">
+                <label for="eventdate">Início</label>
+                <input id="eventdate" name="eventdate" type="datetime-local">
+                <label for="eventdate">Fim</label>
+                <input id="eventdate" name="eventdate" type="datetime-local">
+              </div>
+              <div class="type">
+                <div class="select">
+                  <label for="tipo">Tipo</label>
+                  <select name="tipo" id="tipo">
+                    <option value="presencial">Presencial</option>
+                    <option value="online">Online</option>
+                  </select>
+                </div>
+                <label for="eventtype">Local</label>
+                <input id="eventtype" name="eventtype" type="" placeholder="Link ou endereço">
+              </div>
+              <div class="description">
+                <textarea name="" id=""></textarea>
+              </div>
+
+            </fieldset>
+          </form>
+        </div>
       </main>
     </div>
   </div>
