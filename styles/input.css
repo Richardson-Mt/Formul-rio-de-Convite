@@ -1,0 +1,8 @@
+  input {
+    border: 1px solid var(--input-placeholder);
+    background-color: var(--input-base);
+    height: 3rem;
+    border-radius: 8px;
+    padding: 1rem;
+    color: var(--input-placeholder);
+  }

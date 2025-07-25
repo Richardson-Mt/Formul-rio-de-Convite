@@ -50,5 +50,26 @@ body {
   color: #C8CDD0;
 }
 
+h1 {
+  font: var(--logo);
+  color: var(--pink);
+}
 
+h2 {
+  font: var(--heading-md);
+  color: var(--text-heading);
+  margin-bottom: 2.5rem;
+}
 
+legend {
+  font: var(--heading-sm);
+}
+
+p {
+  color: var(--text-heading);
+  font: var(--body-md);
+}
+
+label {
+  font: var(--body-sm);
+}
