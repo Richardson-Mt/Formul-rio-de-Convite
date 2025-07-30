@@ -35,3 +35,16 @@ main {
   overflow: auto;
   padding: 5rem 8.125rem;
 }
+
+
+
+.color-picker-container {
+    background-color: #333; /* Fundo do container similar ao da imagem */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-colors [
+  
+]
