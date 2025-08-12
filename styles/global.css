@@ -72,4 +72,8 @@ p {
 
 label {
   font: var(--body-sm);
+
+  & img {
+    margin-bottom: 1rem;
+  }
 }
