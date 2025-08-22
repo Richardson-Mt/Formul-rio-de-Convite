@@ -47,7 +47,7 @@
 
 body {
   overflow: hidden;
-  color: #C8CDD0;
+  color: var(--text-body);
 }
 
 h1 {

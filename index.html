@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="light">
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
 
 </head>
 <body>
-  <div id="projeto">
+  <div id="container">
     <div id="brand">
       <aside>
         <div class="aside-container">
@@ -60,16 +60,23 @@
                     <label>Tipo</label>
                   </div>
                   <div class="radio">                                   
-                    <div class="select">                    
+                    <div class="select">
                       <input type="radio" name="tipo" value="presencial" id="presencial" checked>
-                      <img src="assets/icons/building-2.svg" alt="icone de lista de presença">
-                      <label for="presencial" class="mark">Presencial</label>
-                    </div>    
+                      <label for="presencial" class="mark">
+                        <img src="assets/icons/building-2.svg" alt="icone de lista de presença">
+                        Presencial
+                      </label>
+                    </div>                    
+                       
                     <div class="select">
                       <input type="radio" name="tipo" value="online" id="online">
-                      <img src="assets/icons/video.svg" alt="icone de lista de presença">
-                      <label for="online" class="mark">Online</label>
+                      
+                        <label for="online" class="mark">
+                          <img src="assets/icons/video.svg" alt="icone de lista de presença">
+                          Online
+                        </label>                      
                     </div>
+                    
                   </div>
                 </div>
 
@@ -213,13 +220,36 @@
                 </div>
 
                 <div class="theme-footer">
-                  <div>
-                    <span>Estilo</span>
-                    <input type="radio" name="" id="">
+                  <div class="settings-row">
+
+                    <div class="tema-do-evento">
+                      <label>Estilo</label>
+                    </div>
+                    <div class="estilo">
+                      <input type="checkbox" name="style" id="estilo" value="estilo">
+                      <label for="estilo" class="theme-button">
+                        <img class="escuro"  src="assets/icons/Frame 48095946.svg" alt="">
+                        <img class="claro" src="/assets/icons/claro.svg" alt="">
+                        <span class="escuro">Escuro</span>
+                        <span class="claro">Claro</span>
+                      </label>
+                    </div>
+
                   </div>
 
-                  <div class="theme-footer">
-                    <span>Foto de capa</span>
+                  <div class="settings-row">
+                    <div class="tema-do-evento">
+                      <label>Foto de capa</label>
+                    </div>
+                    <div class="file">
+                      <label for="file-upload" class="custom-file-upload">
+                        <img src="/assets/icons/upload.svg" alt="">
+                        <span>selecionar</span>
+                      </label>
+                      <input type="file" id="file-upload">
+                      <span class="span">Nenhum arquivo selecionado</span>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
