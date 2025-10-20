@@ -49,6 +49,22 @@ fieldset {
 
   & input[type="radio"]:checked + .mark {
     background-color: var(--input-base);
+
+    .list-white {
+      display: none;
+    }
+
+    .list-blue {
+      display: inherit;
+    }
+
+    .video-white {
+      display: none;
+    }
+
+    .video-blue {
+      display: inherit;
+    }
   }
   
 }
@@ -67,6 +83,14 @@ fieldset {
     cursor: pointer;
     border-radius: 8px;
     column-gap: 4px;
+
+    .list-blue {
+      display: none;
+    }
+
+    .video-blue {
+      display: none;
+    }
 
     & img {
     margin: 2px;
@@ -107,7 +131,6 @@ fieldset {
 
 
 .tema-do-evento {
-  margin-top: 1.75rem;
   padding-bottom: 1rem;
 }
 
@@ -116,6 +139,7 @@ fieldset {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: .5rem;
+  margin-bottom: 1.75rem;
 
   & input[type="radio"] {
     display: none;
@@ -129,24 +153,28 @@ fieldset {
 
 .border-theme {
   border-radius: 8px;
-  padding: 4px 4px 16px;
+  padding: 4px 4px 8px;
   text-align: center;
   cursor: pointer;
   background-color: var(--shape-button);
   transition: all 0.3s ease-in-out;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+  & img {
+    margin-bottom: .5rem;
+  }
 }
 
-.theme-footer {
+.light-or-dark {
   display: flex;
   justify-content: space-between;
-  padding-top: 1.75rem;
 }
 
 .settings-row {
   & input[type="file"] {
     display: none;
   }
+
 }
 
 .theme-button {
@@ -155,10 +183,9 @@ fieldset {
   gap: 1rem;
   place-items: center;
 
-  .claro {
+  .light {
     display: none;
   }
-
 }
 
 #estilo{
@@ -168,11 +195,11 @@ fieldset {
 #estilo:checked + .theme-button {
   background-repeat: no-repeat;
 
-  .claro {
+  .light {
     display: inherit;
   }
 
-  .escuro {
+  .dark {
     display: none;
   }
 }
@@ -181,11 +208,9 @@ fieldset {
   display: flex;
   align-items: center;
   gap: 1rem;
-
 }
 
-.custom-file-upload {
-  border: 1px solid var(--input-placeholder);
+.custom-file-upload {  
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -194,8 +219,11 @@ fieldset {
   gap: .5rem;
   padding: .75rem;
 
+  .up-blue {
+    display: none;
+  }
+
   img {
-    margin-top: .8rem;
     width: 1rem;
     height: 1rem;
   }
@@ -205,6 +233,119 @@ fieldset {
   }
 }
 
+.custom-file-upload:hover {
+  background-color: var(--input-base);
+
+  .up-white {
+    display: none;
+  }
+
+  .up-blue {
+    display: inherit;
+  }
+}
+
 .span {
   font: var(--body-sm);
+}
+
+
+.dados {
+  display: grid;
+  gap: .75rem;
+
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .error {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--danger);
+    font: var(--body-sm);
+  }
+
+  input {
+    &[disabled] {
+      background-color: var(--input-base);
+      color: var(--input-placeholder);
+    }
+    
+    &:invalid {
+      border: 0.125px solid var(--danger);
+    }
+
+    &:valid + .error {
+      display: none;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;  
+}
+
+.email {
+  width: 50%;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tel {
+  width: 50%;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.checkout-options {
+
+  & input[type="checkbox"] {
+    display: none;
+  }
+}
+
+.checkout-options input + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  border: 1px solid var(--input-placeholder);
+  border-radius: 4px;
+  vertical-align: middle;
+  background-color: var(--input-base);
+}
+
+.checkout-options input:checked + label::before {
+  border: 2px solid var(--brand-light);
+  background-image: url('../assets/icons/check-blue.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;  
+}
+
+.option:last-child {
+  margin-bottom: 0;
+}
+
+.button {
+  width: 11rem;
+  height: 3rem;
+  margin-left: auto;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--brand-mid);
+  color: var(--text-heading);
+  font: var(--body-md);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }

@@ -58,7 +58,6 @@ h1 {
 h2 {
   font: var(--heading-md);
   color: var(--text-heading);
-  margin-bottom: 2.5rem;
 }
 
 legend {
@@ -72,8 +71,4 @@ p {
 
 label {
   font: var(--body-sm);
-
-  & img {
-    margin-bottom: 1rem;
-  }
 }
