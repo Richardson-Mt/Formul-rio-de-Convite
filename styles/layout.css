@@ -1,5 +1,5 @@
 #brand {
-  background-color: var(--shape-background);
+  background-color: var(--shape-body);
   display: grid;
   grid-template-columns: 33.333% 66.666%;
 
@@ -10,11 +10,11 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 3rem;
+  margin-top: 6rem;
   margin-bottom: 1rem;
     
   img {
-    width: rem;
+    width: 1.5rem;
     height: 1.5rem;
   }    
 }

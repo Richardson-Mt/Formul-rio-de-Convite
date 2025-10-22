@@ -1,5 +1,5 @@
   input {
-    border: 1px solid var(--input-placeholder);
+    border: 1px solid var(--input-stroke);
     background-color: var(--input-base);
     height: 3rem;
     border-radius: 8px;
