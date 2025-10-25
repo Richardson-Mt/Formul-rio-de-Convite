@@ -10,6 +10,20 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+    
+  img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }    
+}
+
+#ico 
+{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   margin-top: 6rem;
   margin-bottom: 1rem;
     
